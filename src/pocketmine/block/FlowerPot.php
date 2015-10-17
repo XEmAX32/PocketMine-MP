@@ -47,10 +47,6 @@ class FlowerPot extends Solid{
         return 0;
     }
 
-    public function getToolType(){
-        return Tool::NONE;
-    }
-
     public function getLightLevel(){
         return 1;
     } 
@@ -72,14 +68,17 @@ class FlowerPot extends Solid{
       "Dark Oak Sapling" => 13
      ];
      $meta = $array[$item->getName()];
-     if ($meta !== null){
-      $this->getLevel()->setBlock($this, new FlowerPot($meta), true, true);
-     }
+      $this->getLevel()->setBlock($this,Block::get(140,$meta), true, true);
      return true;
     }
 
     public function getDrops(Item $item){
      $drops[] = [Item::FLOWER_POT, 0, 1];
+     if ( $meta !== 0){
+      $drops_two
+    }
      return $drops;
     }
 }
+ 5,
+      
