@@ -202,7 +202,7 @@ class Block extends Position implements Metadatable{
 	const COBBLE_WALL = 139;
 	const STONE_WALL = 139;
 	const COBBLESTONE_WALL = 139;
-
+        const FLOWER_POT = 140;
 	const CARROT_BLOCK = 141;
 	const POTATO_BLOCK = 142;
 
@@ -421,7 +421,7 @@ class Block extends Position implements Metadatable{
 			self::$list[self::BIRCH_WOOD_STAIRS] = BirchWoodStairs::class;
 			self::$list[self::JUNGLE_WOOD_STAIRS] = JungleWoodStairs::class;
 			self::$list[self::STONE_WALL] = StoneWall::class;
-
+			self::$list[self::FLOWER_POT] = FlowerPot::class;
 			self::$list[self::CARROT_BLOCK] = Carrot::class;
 			self::$list[self::POTATO_BLOCK] = Potato::class;
 
