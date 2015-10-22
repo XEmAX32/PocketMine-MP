@@ -39,6 +39,7 @@ abstract class Tile extends Position{
 	const SIGN = "Sign";
 	const CHEST = "Chest";
 	const FURNACE = "Furnace";
+	const FLOWER_POT = Flower Pot";
 
 	public static $tileCount = 1;
 
